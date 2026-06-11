@@ -32,6 +32,6 @@ O projeto foi construído do zero, utilizando tecnologias web fundamentais de fo
 ---
 
 ## 🎓 Autor
-* **Estudante:** [Seu Nome Completo]
+* **Estudante:** Gabriel Soucek
 * **Série:** 3º Ano do Ensino Médio
 * **Ano:** 2026
