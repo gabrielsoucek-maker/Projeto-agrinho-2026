@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Estufa Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agrinho 2026</div>
+        <nav>
+            <button class="nav-btn active" onclick="mudarPagina('simulador')">Simulador</button>
+            <button class="nav-btn" onclick="mudarPagina('sobre-concurso')">O Concurso</button>
+            <button class="nav-btn" onclick="mudarPagina('sobre-mim')">Sobre Mim</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section id="simulador" class="page active">
+            <h2>Simulador de Estufa de Morango Inteligente</h2>
+            <p class="subtitle">Ajuste os parâmetros para encontrar o equilíbrio ideal e garantir uma produção sustentável.</p>
+            
+            <div class="dashboard">
+                <div class="card controles">
+                    <h3>Painel de Controle</h3>
+                    
+                    <div class="control-group">
+                        <label for="temp">Temperatura: <span id="val-temp">22</span>°C</label>
+                        <input type="range" id="temp" min="10" max="35" value="22" oninput="atualizarSimulador()">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="umi-ar">Umidade do Ar: <span id="val-umi-ar">70</span>%</label>
+                        <input type="range" id="umi-ar" min="40" max="95" value="70" oninput="atualizarSimulador()">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="umi-solo">Umidade do Solo: <span id="val-umi-solo">65</span>%</label>
+                        <input type="range" id="umi-solo" min="30" max="90" value="65" oninput="atualizarSimulador()">
+                    </div>
+                </div>
+
+                <div
